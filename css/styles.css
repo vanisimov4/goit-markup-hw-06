@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #434455;
   background-color: #fff;
 }
@@ -82,7 +82,7 @@ img {
 
 .logo {
   color: #4d5ae5;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
@@ -125,7 +125,7 @@ img {
 }
 
 .header-current::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -201,7 +201,7 @@ img {
   background-color: #4d5ae5;
   color: #fff;
   /* Button Text */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -476,7 +476,7 @@ img {
 
 .footer-logo-white {
   color: #f4f4fd;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
@@ -585,7 +585,7 @@ img {
   color: #fff;
   text-align: center;
   /* Button Text */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -772,13 +772,13 @@ img {
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-display: inline-flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-check-text .modal-privacy-link {
@@ -792,7 +792,7 @@ display: inline-flex;
 
 .modal-check:checked + .modal-check-text .modal-check-span {
   background-color: #404bbf;
-  fill: #F4F4FD;
+  fill: #f4f4fd;
   border: none;
 }
 
@@ -809,7 +809,7 @@ display: inline-flex;
   color: #fff;
   text-align: center;
   /* Button Text */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -817,7 +817,121 @@ display: inline-flex;
   letter-spacing: 0.04em;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+/* ======================================*/
+/* ================MOBILEMENU======================*/
+.mobilemenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 320px;
+  min-height: 640px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background-color: #fff;
+  border: 1px solid #2e2f42;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 40px;
+  padding-left: 16px;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.mobilemenu-navigation {
+  margin-bottom: 168px;
+}
+
+.mobilemenu-list {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.mobilemenu-item {
+}
+
+.mobilemenu-link {
+  color: #2e2f42;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobilemenu-current {
+  color: #404bbf;
+}
+
+.mobilemenu-link:hover,
+.mobilemenu-link:focus {
+  color: #404bbf;
+}
+
+.mobilemenu-address {
+  font-style: normal;
+  margin-bottom: 48px;
+}
+
+.mobilemenu-address-list {
+  display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.mobilemenu-address-item {
+}
+
+.mobilemenu-address-link {
+  color: #434455;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobilemenu-address-link:hover,
+.mobilemenu-address-link:focus {
+  color: #4D5AE5;
+}
+
+.address-current {
+  color: #4D5AE5;
+}
+
+.mobilemenu-soc-list {
+display: inline-flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.mobilemenu-soc-item {
+}
+
+.mobilemenu-soc-link {
+    width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #4d5ae5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.mobilemenu-soc-icon {
+    fill: #f4f4fd;
+}
+/* ======================================*/
+/* ================Is-Open======================*/
 .is-open {
   opacity: 1;
   visibility: visible;
