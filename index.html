@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" class="header-logo logo"
@@ -39,6 +39,11 @@
               <a href="" class="header-menu-link">Contacts</a>
             </li>
           </ul>
+          <button type="button" class="header-btn">
+            <svg class="header-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#solid_menu"></use>
+            </svg>
+          </button>
         </nav>
         <address class="header-address">
           <ul class="header-address-menu-list">
@@ -57,14 +62,82 @@
           </ul>
         </address>
       </div>
-    </header> -->
+    </header>
+    <div class="mobilemenu">
+      <button type="button" class="modal-btn">
+        <svg class="modal-btn-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+      <nav class="mobilemenu-navigation">
+        <ul class="mobilemenu-list">
+          <li class="mobilemenu-item">
+            <a href="./index.html" class="mobilemenu-link mobilemenu-current"
+              >Studio</a
+            >
+          </li>
+          <li class="mobilemenu-item">
+            <a href="" class="mobilemenu-link">Portfolio</a>
+          </li>
+          <li class="mobilemenu-item">
+            <a href="" class="mobilemenu-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="mobilemenu-address">
+        <ul class="mobilemenu-address-list">
+          <li class="mobilemenu-address-item">
+            <a
+              class="mobilemenu-address-link address-current"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="mobilemenu-address-item">
+            <a class="mobilemenu-address-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+      <ul class="mobilemenu-soc-list">
+        <li class="mobilemenu-soc-item">
+          <a class="mobilemenu-soc-link" href=""
+            ><svg class="mobilemenu-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobilemenu-soc-item">
+          <a class="mobilemenu-soc-link" href=""
+            ><svg class="mobilemenu-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobilemenu-soc-item">
+          <a class="mobilemenu-soc-link" href=""
+            ><svg class="mobilemenu-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobilemenu-soc-item">
+          <a class="mobilemenu-soc-link" href=""
+            ><svg class="mobilemenu-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-tite">Effective Solutions for Your Business</h1>
           <button class="hero-btn" type="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
       <section class="features section">
         <div class="container">
           <h2 class="visually-hidden">features</h2>
@@ -126,6 +199,7 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="./images/our-team1.jpg 1x, ./images/our-team1@2x.jpg 2x"
                 class="team-img"
                 src="./images/our-team1.jpg"
                 alt="Mark Guerrero"
@@ -168,6 +242,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/our-team2.jpg 1x, ./images/our-team2@2x.jpg 2x"
                 class="team-img"
                 src="./images/our-team2.jpg"
                 alt="Tom Ford"
@@ -210,6 +285,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/our-team3.jpg 1x, ./images/our-team3@2x.jpg 2x"
                 class="team-img"
                 src="./images/our-team3.jpg"
                 alt="Camila Garcia"
@@ -252,6 +328,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/our-team4.jpg 1x, ./images/our-team4@2x.jpg 2x"
                 class="team-img"
                 src="./images/our-team4.jpg"
                 alt="Daniel Wilson"
@@ -417,7 +494,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-about">
           <a class="footer-logo logo" href="./index.html"
@@ -481,7 +558,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-btn">
@@ -553,74 +630,6 @@
           <button type="submit" class="modal-btn-submit">Send</button>
         </form>
       </div>
-    </div>
-    <div class="mobilemenu">
-      <button type="button" class="modal-btn">
-        <svg class="modal-btn-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <nav class="mobilemenu-navigation">
-        <ul class="mobilemenu-list">
-          <li class="mobilemenu-item">
-            <a href="./index.html" class="mobilemenu-link mobilemenu-current"
-              >Studio</a
-            >
-          </li>
-          <li class="mobilemenu-item">
-            <a href="" class="mobilemenu-link">Portfolio</a>
-          </li>
-          <li class="mobilemenu-item">
-            <a href="" class="mobilemenu-link">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <address class="mobilemenu-address">
-        <ul class="mobilemenu-address-list">
-          <li class="mobilemenu-address-item">
-            <a
-              class="mobilemenu-address-link address-current"
-              href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="mobilemenu-address-item">
-            <a class="mobilemenu-address-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
-      <ul class="mobilemenu-soc-list">
-        <li class="mobilemenu-soc-item">
-          <a class="mobilemenu-soc-link" href=""
-            ><svg class="mobilemenu-soc-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobilemenu-soc-item">
-          <a class="mobilemenu-soc-link" href=""
-            ><svg class="mobilemenu-soc-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobilemenu-soc-item">
-          <a class="mobilemenu-soc-link" href=""
-            ><svg class="mobilemenu-soc-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="mobilemenu-soc-item">
-          <a class="mobilemenu-soc-link" href=""
-            ><svg class="mobilemenu-soc-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
     </div>
   </body>
 </html>
